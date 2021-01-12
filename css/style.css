@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+/*全体とリセット---*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../images/coffee_bg.jpg);
+  font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, sans-serif;
+}
+
+
+/*ボックスレイアウト---*/
+
+.wrapper {
+  width: 820px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.main_out {
+  margin: 10px;
+  border: dotted 1px #320200;
+}
+
+main {
+  margin: 10px;
+  background-image: url(../images/bar.jpg);
+  background-repeat: repeat-y;
+  background-position: left top;
+}
+
+article {
+  width: 580px;
+  float: right;
+}
+
+nav {
+  padding: 3px 10px;
+  background-color: #320200;
+}
+
+footer {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-top: 2px solid #320200;
+}
+
+
+/*header内---*/
+
+header {
+  height: 170px;
+  padding-top: 30px;
+  padding-left: 20px;
+  background-image: url(../images/green-top.jpg);
+  position: relative;
+}
+
+header h1 {
+  height: 48px;
+  width: 305px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+header p {
+  font-size: 0.75em;
+  line-height: 1.5;
+  margin-top: 5px;
+  color: #fff;
+}
+
+header .mark img {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+
+/*aside内---*/
+
+aside {
+  width: 170px;
+  float: left;
+  text-align: center;
+  padding-top: 5px;
+}
+
+
+/*article内---*/
+
+article section {
+  padding: 30px;
+}
+
+article p.photo-L img {
+  float: left;
+  margin-right: 10px;
+}
+
+article p.photo-R img {
+  float: right;
+  margin-left: 10px;
+}
+
+article h2 {
+  font-size: 0.875em;
+  color: #fff;
+  line-height: 30px;
+  background-color: #320200;
+  padding-left: 30px;
+}
+
+article h3 {
+  font-size: 1em;
+  color: #320200;
+  line-height: 20px;
+  background-image: url(../images/mark.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 24px;
+  border-bottom: 2px solid #320200;
+}
+
+article p {
+  font-size: 0.875em;
+  color: #000;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+
+/*nav内---*/
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  width: 20%;
+  float: left;
+}
+
+nav li a {
+  display: block;
+  font-size: 0.875em;
+  color: #fff;
+  text-decoration: none;
+  line-height: 38px;
+  background-color: #320200;
+  text-align: center;
+  border-right: 1px solid #fff;
+}
+
+nav li:last-child a {
+  border-right: none;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+/*footer内---*/
+
+footer small {
+  font-size: 0.75em;
+  line-height: 40px;
+  color: #320200;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 20px;
+  display: block;
+}
+
+
+/*テーブル・フォーム---*/
+
+article table {
+  border-spacing: 5px 10px;
+  font-size: 0.75em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+article th {
+  padding: 10px;
+  line-height: left;
+  background-color: #320200;
+  vertical-align: top;
+  color: #fff;
+  width: 150px;
+}
+
+article td {
+  padding: 10px;
+  background-color: #eee;
+}
+
+article .button {
+  background-color: #fff;
+  text-align: right;
+}
+
+article .button input {
+  width: 150px;
+  padding-left: 5px;
+}
+
+article input {
+  width: 100%;
+}
+
+article textarea {
+  width: 100%;
+}
+
+
+/*↓各ページのメニュー項目の色を変える*/
+
+.index li:nth-child(1) a,
+.event li:nth-child(2) a,
+.contact li:nth-child(3) a,
+.access li:nth-child(4) a {
+  text-decoration: underline;
+  color: #f00;
+}
+
+
+/*「access.html」「contact.html」「event.html」---*/
+
+.access main,
+.contact main,
+.event main {
+  background-image: none;
+  background-color: #fff;
+  height: 500px;
+  padding: 30px;
+}
+
+
+/*clearfix---*/
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
